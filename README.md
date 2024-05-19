@@ -32,9 +32,13 @@ VMware won't let you enlarge the disk in the normal way, so one simple way is:
 
 
 install v2raya from the gui of openwrt and the 
+
+# For advanced usage, please see /etc/config/v2raya
+
+
 opkg update
 opkg install luci-app-v2raya v2ray-geoip v2ray-geosite
-# For advanced usage, please see /etc/config/v2raya
+
 uci set v2raya.config.enabled='1'
 uci commit v2raya
 
